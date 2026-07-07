@@ -1,6 +1,7 @@
 :root {
     --bg: #f3f6fb;
     --surface: #ffffff;
+    --white: #ffffff;
     --text: #17324d;
     --muted: #5d6b7a;
     --accent: #ffb703;
@@ -37,7 +38,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background: var(--dark);
-    color: #fff;
+    color: var(--white);
     padding: 1rem 1.25rem;
     position: sticky;
     top: 0;
@@ -66,7 +67,7 @@ a {
     gap: 0.25rem;
     border: 0;
     background: transparent;
-    color: #fff;
+    color: var(--white);
     padding: 0.25rem;
     cursor: pointer;
 }
@@ -258,7 +259,7 @@ section p,
 
 footer {
     background: var(--dark);
-    color: #fff;
+    color: var(--white);
     padding: 1.25rem;
     display: grid;
     gap: 0.9rem;
