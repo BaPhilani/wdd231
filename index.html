@@ -4,16 +4,93 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 231 Page</title>
+    <meta name="description"
+        content="Home page for WDD 231 with course information, navigation, and assignment details." />
+    <meta name="author" content="Your Name" />
+    <title>WDD 231 | Course Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
+    <header class="site-header">
+        <a class="site-brand logo-link" href="index.html" aria-label="WDD 231 home">
+            <img src="images/logo.svg" alt="WDD 231 logo" />
+            <span>WDD 231</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank" rel="noopener">Final</a>
+        </nav>
+    </header>
+
     <main>
-        <h1 id="page-title" class="main-title">Welcome</h1>
-        <p>This page now links to the stylesheet in the head.</p>
+        <section class="hero">
+            <h1>Home</h1>
+            <p>This course home page highlights the Web Frontend Development II experience, key goals, and the
+                certificate pathway for the Web and Computer Programming program.</p>
+        </section>
+
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About the Course</h2>
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Build Responsive Sites</h3>
+                    <p>Create pages that respond gracefully across desktop, tablet, and mobile devices using modern
+                        HTML, CSS, and JavaScript practices.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Accessibility First</h3>
+                    <p>Use semantic markup, readable contrast, keyboard-friendly navigation, and quality structure to
+                        support all users.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Professional Workflow</h3>
+                    <p>Practice version control, file organization, and clean code habits that help you deliver polished
+                        web projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="courses-heading">
+            <div class="section-header">
+                <h2 id="courses-heading">Certificate Courses</h2>
+                <div class="filter-group" role="group" aria-label="Course filters">
+                    <button class="filter-button active" data-filter="all">All Courses</button>
+                    <button class="filter-button" data-filter="wdd">WDD Courses</button>
+                    <button class="filter-button" data-filter="cse">CSE Courses</button>
+                </div>
+            </div>
+            <div id="courseGrid" class="course-grid" aria-live="polite"></div>
+            <p id="creditTotal" class="credits-summary">Total credits shown: 0</p>
+        </section>
     </main>
+
+    <footer>
+        <div>
+            <h2>Connect</h2>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.byui.edu/" target="_blank" rel="noopener">BYU-Idaho</a>
+            </div>
+        </div>
+        <p class="footer-note">&copy; <span id="currentyear"></span> Your Name | Utah, USA</p>
+        <p class="footer-note">Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
