@@ -1,12 +1,10 @@
 const courses = [
-    { code: 'WDD 130', title: 'Web Fundamentals', credits: 3, completed: true, category: 'WDD' },
-    { code: 'CSE 110', title: 'Programming Building Blocks', credits: 3, completed: true, category: 'CSE' },
-    { code: 'CSE 111', title: 'Programming with Functions', credits: 3, completed: true, category: 'CSE' },
-    { code: 'CSE 121', title: 'Programming with Classes', credits: 3, completed: true, category: 'CSE' },
-    { code: 'WDD 131', title: 'Dynamic Web Fundamentals', credits: 3, completed: true, category: 'WDD' },
-    { code: 'WDD 230', title: 'Web Frontend Development I', credits: 3, completed: true, category: 'WDD' },
-    { code: 'WDD 231', title: 'Web Frontend Development II', credits: 3, completed: false, category: 'WDD' },
-    { code: 'CSE 122', title: 'Programming and Problem Solving', credits: 3, completed: false, category: 'CSE' }
+    { code: 'WDD 130', title: 'Web Fundamentals', credits: 2, completed: true, category: 'WDD' },
+    { code: 'CSE 110', title: 'Programming Building Blocks', credits: 2, completed: true, category: 'CSE' },
+    { code: 'CSE 111', title: 'Programming with Functions', credits: 2, completed: true, category: 'CSE' },
+    { code: 'CSE 121', title: 'Programming with Classes', credits: 2, completed: true, category: 'CSE' },
+    { code: 'WDD 131', title: 'Dynamic Web Fundamentals', credits: 2, completed: true, category: 'WDD' },
+    { code: 'WDD 230', title: 'Web Frontend Development I', credits: 2, completed: true, category: 'WDD' }
 ];
 
 const courseGrid = document.getElementById('courseGrid');
