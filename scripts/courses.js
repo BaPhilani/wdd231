@@ -4,7 +4,7 @@ const courses = [
     { code: 'CSE 111', title: 'Programming with Functions', credits: 2, completed: true, category: 'CSE' },
     { code: 'CSE 121', title: 'Programming with Classes', credits: 2, completed: true, category: 'CSE' },
     { code: 'WDD 131', title: 'Dynamic Web Fundamentals', credits: 2, completed: true, category: 'WDD' },
-    { code: 'WDD 230', title: 'Web Frontend Development I', credits: 2, completed: true, category: 'WDD' }
+    { code: 'WDD 230', title: 'Web Frontend Development I', credits: 2, completed: false, category: 'WDD' }
 ];
 
 const courseGrid = document.getElementById('courseGrid');
