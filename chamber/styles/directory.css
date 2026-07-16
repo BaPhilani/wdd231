@@ -1,37 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    color-scheme: light;
-    color: #111;
-    background: #f8fafc;
-    font-family: Inter, system-ui, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-button {
-    font: inherit;
-    cursor: pointer;
-}
-
-.site-header {
+.directory-page .site-header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -40,24 +7,21 @@ button {
     padding: 1.5rem 2rem;
     background: #e5f6ff;
     border-bottom: 1px solid #d0e6ef;
-}
-
-.directory-page .site-header {
     color: #0a1a2b;
 }
 
-.brand {
+.directory-page .brand {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.brand-logo {
+.directory-page .brand-logo {
     width: 64px;
     height: 64px;
 }
 
-.eyebrow {
+.directory-page .eyebrow {
     margin: 0 0 0.35rem;
     font-size: 0.9rem;
     color: #0f5461;
@@ -65,44 +29,20 @@ button {
     letter-spacing: 0.1em;
 }
 
-.site-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.brand-title {
+.directory-page .brand-title {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
     color: #0a1a2b;
 }
 
-.site-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-}
-
-.site-nav a {
-    padding: 0.75rem 1rem;
-    border-radius: 999px;
-    transition: background 0.25s ease, color 0.25s ease;
-}
-
-.site-nav a:hover,
-.site-nav a.active {
-    background: #0f5461;
-    color: #fff;
-}
-
-main {
+.directory-page main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.landing {
+.directory-page .landing {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1.6fr 0.9fr;
@@ -110,24 +50,24 @@ main {
     margin-bottom: 2rem;
 }
 
-.landing h2 {
+.directory-page .landing h2 {
     margin: 0 0 0.75rem;
     font-size: clamp(2rem, 2.5vw, 2.75rem);
 }
 
-.landing p {
+.directory-page .landing p {
     max-width: 40rem;
     margin: 0;
     color: #334e5b;
 }
 
-.view-controls {
+.directory-page .view-controls {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
 }
 
-.view-button {
+.directory-page .view-button {
     border: 1px solid #0f5461;
     background: #fff;
     color: #0f5461;
@@ -136,17 +76,17 @@ main {
     transition: background 0.25s ease, color 0.25s ease;
 }
 
-.view-button.active,
-.view-button:hover {
+.directory-page .view-button.active,
+.directory-page .view-button:hover {
     background: #0f5461;
     color: #fff;
 }
 
-.directory-section {
+.directory-page .directory-section {
     margin-top: 1rem;
 }
 
-.directory-grid {
+.directory-page .directory-grid {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -155,11 +95,11 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.directory-list {
+.directory-page .directory-list {
     display: block;
 }
 
-.directory-list li {
+.directory-page .directory-list li {
     display: flex;
     gap: 1rem;
     padding: 1rem;
@@ -169,7 +109,7 @@ main {
     align-items: center;
 }
 
-.directory-card {
+.directory-page .directory-card {
     background: #fff;
     border-radius: 18px;
     padding: 1.25rem;
@@ -178,22 +118,22 @@ main {
     gap: 0.9rem;
 }
 
-.directory-card h3 {
+.directory-page .directory-card h3 {
     margin: 0;
     font-size: 1.25rem;
 }
 
-.directory-card p {
+.directory-page .directory-card p {
     margin: 0.35rem 0;
     color: #4e5f68;
 }
 
-.company-meta {
+.directory-page .company-meta {
     display: grid;
     gap: 0.35rem;
 }
 
-.company-logo {
+.directory-page .company-logo {
     width: 100%;
     height: 180px;
     border-radius: 14px;
@@ -206,57 +146,53 @@ main {
     font-size: 2rem;
 }
 
-.company-logo span {
+.directory-page .company-logo span {
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
 
-.company-data {
+.directory-page .company-data {
     display: grid;
     gap: 0.25rem;
 }
 
-.company-data strong {
+.directory-page .company-data strong {
     display: inline-block;
     width: 4.5rem;
 }
 
-.site-footer {
+.directory-page .site-footer {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     padding: 2rem;
-    background: #0f5461;
-    color: #eef6f9;
+    background: #eef6f9;
+    color: #0a1a2b;
 }
 
-.site-footer h2 {
+.directory-page .site-footer h2 {
     margin-top: 0;
+    color: #0a1a2b;
 }
 
-.site-footer p {
+.directory-page .site-footer p {
     margin: 0.35rem 0;
-    color: #d6e8ed;
+    color: #334e5b;
 }
 
 @media (max-width: 900px) {
-    .landing {
+    .directory-page .landing {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 640px) {
-    .site-header {
+    .directory-page .site-header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .site-nav {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .directory-list li {
+    .directory-page .directory-list li {
         flex-direction: column;
         align-items: stretch;
     }
