@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="thabaTitle thabaDesc">
+  <title id="thabaTitle">Thaba Pharmacy Logo</title>
+  <desc id="thabaDesc">Medical pharmacy icon with a mortar and pestle design.</desc>
+  <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
+  <circle cx="60" cy="55" r="28" fill="#0f5461" />
+  <path d="M60 30 v50" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+  <path d="M42 55 h36" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+  <path d="M36 82 h48" stroke="#c81d25" stroke-width="8" stroke-linecap="round" />
+</svg>

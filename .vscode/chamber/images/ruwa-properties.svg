@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="ruwaTitle ruwaDesc">
+  <title id="ruwaTitle">Ruwa Properties Logo</title>
+  <desc id="ruwaDesc">Real estate property icon with a house and rooftop.</desc>
+  <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
+  <polygon points="24,72 60,36 96,72 96,90 24,90" fill="#0f5461" />
+  <rect x="42" y="54" width="36" height="36" fill="#7dd3fc" />
+  <rect x="54" y="66" width="12" height="12" fill="#ffffff" />
+</svg>

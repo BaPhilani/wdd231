@@ -20,11 +20,14 @@
         content="Directory of Ruwa town Chamber of Commerce members, showcasing local businesses and services throughout the community." />
     <meta name="twitter:image" content="images/chamber-logo.svg" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/small.css" />
+    <link rel="stylesheet" href="../../styles/large.css" />
+    <script defer src="../../scripts/navigation.js"></script>
     <script defer src="scripts/directory.js"></script>
 </head>
 
-<body>
+<body class="directory-page">
     <header class="site-header">
         <div class="brand">
             <img class="brand-logo" src="images/chamber-logo.svg" alt="Ruwa Town Chamber of Commerce logo" />
@@ -33,9 +36,14 @@
                 <h1>Business Directory</h1>
             </div>
         </div>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="site-nav" aria-label="Primary navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">Directory</a>
+            <a href="#">Home</a>
+            <a href="#" class="active">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
@@ -72,6 +80,7 @@
             <p>Victor Mtisi</p>
             <p>WDD 231</p>
             <p>Last modification: <span id="lastModifiedDate"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Ruwa Town Chamber of Commerce</p>
         </div>
     </footer>
 </body>

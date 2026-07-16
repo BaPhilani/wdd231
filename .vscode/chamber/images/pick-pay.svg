@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="pickTitle pickDesc">
+  <title id="pickTitle">Pick & Pay Logo</title>
+  <desc id="pickDesc">Retail icon with a shopping bag and modern mark.</desc>
+  <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
+  <path d="M34 40 h52 v48 a8 8 0 0 1 -8 8 h-36 a8 8 0 0 1 -8 -8 z" fill="#0f5461" />
+  <path d="M46 40 v-8 a8 8 0 0 1 16 0 v8" stroke="#7dd3fc" stroke-width="8" fill="none" stroke-linecap="round" />
+  <path d="M52 72 h16" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+</svg>

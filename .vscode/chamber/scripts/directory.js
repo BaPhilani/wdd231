@@ -2,57 +2,7 @@ const directory = document.querySelector('#directory');
 const gridView = document.querySelector('#gridView');
 const listView = document.querySelector('#listView');
 const lastModifiedDate = document.querySelector('#lastModifiedDate');
-
-const members = [
-    {
-        name: 'Ruwa Supply Co.',
-        tagline: 'Local hardware and construction supplies',
-        email: 'contact@ruwasupply.co.zw',
-        phone: '(+263) 77 345 6789',
-        website: 'https://ruwasupply.co.zw',
-        initials: 'RS'
-    },
-    {
-        name: 'Eastern Digital Media',
-        tagline: 'Design, branding, and digital marketing',
-        email: 'hello@easterndigital.co.zw',
-        phone: '(+263) 78 987 6543',
-        website: 'https://easterndigital.co.zw',
-        initials: 'ED'
-    },
-    {
-        name: 'Mbada Catering Services',
-        tagline: 'Catering for events, meetings, and celebrations',
-        email: 'orders@mbadacatering.co.zw',
-        phone: '(+263) 71 234 5678',
-        website: 'https://mbadacatering.co.zw',
-        initials: 'MB'
-    },
-    {
-        name: 'Ruwa Wellness Center',
-        tagline: 'Health and wellness services for the community',
-        email: 'info@ruwawellness.co.zw',
-        phone: '(+263) 78 123 4567',
-        website: 'https://ruwawellness.co.zw',
-        initials: 'RW'
-    },
-    {
-        name: 'Nyika Printing House',
-        tagline: 'Print, copy, and signage solutions',
-        email: 'print@nyikaprint.co.zw',
-        phone: '(+263) 77 555 1234',
-        website: 'https://nyikaprint.co.zw',
-        initials: 'NP'
-    },
-    {
-        name: 'Chiedza Learning Hub',
-        tagline: 'Tutoring and business coaching in Ruwa',
-        email: 'support@chiedzahub.co.zw',
-        phone: '(+263) 71 876 5432',
-        website: 'https://chiedzahub.co.zw',
-        initials: 'CH'
-    }
-];
+const copyrightYear = document.querySelector('#copyrightYear');
 
 function formatDate(dateString) {
     const date = new Date(dateString);
@@ -65,7 +15,19 @@ function formatDate(dateString) {
     });
 }
 
-function renderDirectory() {
+function getMembershipLabel(level) {
+    switch (level) {
+        case 3:
+            return 'Gold Member';
+        case 2:
+            return 'Silver Member';
+        case 1:
+        default:
+            return 'Member';
+    }
+}
+
+function displayMembers(members) {
     directory.innerHTML = '';
 
     members.forEach((member) => {
@@ -73,15 +35,18 @@ function renderDirectory() {
         card.className = 'directory-card';
 
         card.innerHTML = `
-      <div class="company-logo"><span>${member.initials}</span></div>
+      <div class="company-logo">
+        <img class="company-splash" src="images/${member.image}" alt="${member.name} logo" />
+      </div>
       <div class="company-meta">
         <h3>${member.name}</h3>
-        <p>${member.tagline}</p>
+        <p class="membership-pill">${getMembershipLabel(member.membershipLevel)}</p>
+        <p>${member.industry} &bull; ${member.address}</p>
+        <p>${member.description}</p>
       </div>
       <div class="company-data">
-        <p><strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a></p>
         <p><strong>Phone:</strong> <a href="tel:${member.phone}">${member.phone}</a></p>
-        <p><strong>URL:</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a></p>
+        <p><strong>Web:</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a></p>
       </div>
     `;
 
@@ -89,9 +54,24 @@ function renderDirectory() {
     });
 }
 
-function setLastModified() {
+async function getMembers() {
+    try {
+        const response = await fetch('data/members.json');
+        if (!response.ok) {
+            throw new Error(`Failed to load members: ${response.status}`);
+        }
+        const data = await response.json();
+        displayMembers(data.companies);
+    } catch (error) {
+        directory.innerHTML = `<li class="directory-card"><p>Unable to load member data. ${error.message}</p></li>`;
+        console.error(error);
+    }
+}
+
+function setPageInfo() {
     const modified = document.lastModified || new Date().toISOString();
     lastModifiedDate.textContent = formatDate(modified);
+    copyrightYear.textContent = new Date().getFullYear();
 }
 
 function activateGrid() {
@@ -109,5 +89,5 @@ function activateList() {
 gridView.addEventListener('click', activateGrid);
 listView.addEventListener('click', activateList);
 
-renderDirectory();
-setLastModified();
+getMembers();
+setPageInfo();

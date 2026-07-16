@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="wellyTitle wellyDesc">
+  <title id="wellyTitle">Welly Year Logistics Logo</title>
+  <desc id="wellyDesc">Logistics brand icon with a delivery truck and motion lines.</desc>
+  <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
+  <rect x="26" y="56" width="68" height="30" rx="8" fill="#0f5461" />
+  <rect x="30" y="64" width="38" height="18" fill="#7dd3fc" />
+  <circle cx="40" cy="92" r="10" fill="#0f5461" />
+  <circle cx="80" cy="92" r="10" fill="#0f5461" />
+  <path d="M30 52 h40" stroke="#c81d25" stroke-width="6" stroke-linecap="round" />
+</svg>

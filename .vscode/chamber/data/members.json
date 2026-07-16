@@ -1,0 +1,74 @@
+{
+    "companies": [
+        {
+            "name": "Ruwa Properties",
+            "address": "1464 Chinhodo Street",
+            "phone": "+263 775 272 974",
+            "website": "https://www.ruwaproperties.co.zw",
+            "image": "ruwa-properties.svg",
+            "membershipLevel": 3,
+            "industry": "Estates",
+            "description": "Residential and commercial property sales and rentals in Ruwa."
+        },
+        {
+            "name": "PAVI Projects",
+            "address": "15968 Damafalls",
+            "phone": "+263 772 886 931",
+            "website": "http://www.pavilectronics.co.zw",
+            "image": "pavi-projects.svg",
+            "membershipLevel": 1,
+            "industry": "Electronics",
+            "description": "Supplier of consumer electronics and small business technology solutions."
+        },
+        {
+            "name": "Welly Year Logistics",
+            "address": "192 Mazowe Drive",
+            "phone": "+263 352 783",
+            "website": "https://www.wellyear.logistics.co.zw",
+            "image": "welly-year.svg",
+            "membershipLevel": 2,
+            "industry": "Transport",
+            "description": "Logistics and freight services serving Ruwa and surrounding areas."
+        },
+        {
+            "name": "Clams Construction",
+            "address": "23 Zebra Avenue, Zimre",
+            "phone": "+263 882 935 969",
+            "website": "https://www.clamsconstruction.org",
+            "image": "clams-construction.svg",
+            "membershipLevel": 2,
+            "industry": "Construction",
+            "description": "General contractors and building specialists for residential projects."
+        },
+        {
+            "name": "Thaba Pharmacy",
+            "address": "67 Macdonald Avenue",
+            "phone": "+273 071 567 904",
+            "website": "https://www.thabapharmacy.com",
+            "image": "thaba-pharmacy.svg",
+            "membershipLevel": 1,
+            "industry": "Medical",
+            "description": "Community pharmacy offering prescriptions, health supplies, and consultations."
+        },
+        {
+            "name": "Pick & Pay Ruwa",
+            "address": "Windsor Mall",
+            "phone": "+263 887 654 286",
+            "website": "https://www.pickandpay.co.zw",
+            "image": "pick-pay.svg",
+            "membershipLevel": 3,
+            "industry": "Retail",
+            "description": "Supermarket and grocery supply with fresh food and household essentials."
+        },
+        {
+            "name": "The Place Restaurant",
+            "address": "Windsor Mall",
+            "phone": "+236 773 049 274",
+            "website": "https://www.theplace.co.zw",
+            "image": "the-place.svg",
+            "membershipLevel": 2,
+            "industry": "Restaurant",
+            "description": "Casual dining and event catering for local business groups and families."
+        }
+    ]
+}

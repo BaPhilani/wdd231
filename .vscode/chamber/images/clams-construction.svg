@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="clamsTitle clamsDesc">
+  <title id="clamsTitle">Clams Construction Logo</title>
+  <desc id="clamsDesc">Construction icon with building blocks and strong structure.</desc>
+  <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
+  <path d="M30 82 h58 v-38 h-58 z" fill="#0f5461" />
+  <path d="M38 74 h12 v-18 h-12 z" fill="#7dd3fc" />
+  <path d="M58 74 h12 v-18 h-12 z" fill="#7dd3fc" />
+  <path d="M78 74 h12 v-18 h-12 z" fill="#7dd3fc" />
+  <path d="M34 50 l20 -20 h32 l20 20" fill="none" stroke="#c81d25" stroke-width="8" stroke-linejoin="round" />
+</svg>
