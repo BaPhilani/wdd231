@@ -1,11 +1,12 @@
 .directory-page .site-header {
     background: #e5f6ff;
     border-bottom: 1px solid #d0e6ef;
-    color: #0a1a2b;
+    color: var(--dark);
 }
 
 .directory-page .brand {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -15,61 +16,51 @@
 
 .directory-page .eyebrow {
     margin: 0 0 0.35rem;
-    font-size: 0.9rem;
     color: #0f5461;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
 .directory-page .brand-title {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0a1a2b;
 }
 
 .directory-page main {
     padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .directory-page .landing {
     display: grid;
-    gap: 1.5rem;
     grid-template-columns: 1.6fr 0.9fr;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
 }
 
 .directory-page .landing h2 {
     margin: 0 0 0.75rem;
-    font-size: clamp(2rem, 2.5vw, 2.75rem);
 }
 
 .directory-page .landing p {
-    max-width: 40rem;
     margin: 0;
     color: #334e5b;
 }
 
 .directory-page .view-controls {
     display: flex;
-    gap: 0.75rem;
 }
 
 .directory-page .view-button {
-    border: 1px solid #0f5461;
-    background: #fff;
-    color: #0f5461;
     padding: 0.85rem 1.2rem;
+    border: 1px solid #0f5461;
     border-radius: 999px;
-    transition: background 0.25s ease, color 0.25s ease;
+    color: #0f5461;
+    background: var(--white);
 }
 
 .directory-page .view-button.active,
 .directory-page .view-button:hover {
+    color: var(--white);
     background: #0f5461;
-    color: #fff;
 }
 
 .directory-page .directory-grid {
@@ -81,69 +72,52 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.directory-page .directory-list li,
+.directory-page .directory-card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
 .directory-page .directory-list li {
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    border-radius: 18px;
-    background: #fff;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
 }
 
 .directory-page .directory-card {
-    background: #fff;
-    border-radius: 18px;
     padding: 1.25rem;
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
 }
 
 .directory-page .directory-card h3 {
     margin: 0;
-    font-size: 1.25rem;
-}
-
-.directory-page .directory-card p {
-    margin: 0.35rem 0;
-    color: #4e5f68;
 }
 
 .directory-page .company-logo {
     height: 180px;
+    display: grid;
+    place-items: center;
     border-radius: 14px;
-    background: linear-gradient(135deg, #d8f1ff 0%, #bae0f7 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #0f5461;
-    font-weight: 700;
-    font-size: 2rem;
+    background: linear-gradient(135deg, #d8f1ff 0%, #bae0f7 100%);
 }
 
 .directory-page .company-data {
     display: grid;
-    gap: 0.25rem;
 }
 
 .directory-page .company-data strong {
     display: inline-block;
-    width: 4.5rem;
+    min-width: 4.5rem;
 }
 
 .directory-page .site-footer {
+    padding: 2rem;
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding: 2rem;
+    color: var(--dark);
     background: #eef6f9;
-    color: #0a1a2b;
-}
-
-.directory-page .site-footer h2 {
-    margin-top: 0;
-}
-
-.directory-page .site-footer p {
-    margin: 0.35rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 @media (max-width: 900px) {
