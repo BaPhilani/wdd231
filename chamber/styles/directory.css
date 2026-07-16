@@ -42,6 +42,10 @@ button {
     border-bottom: 1px solid #d0e6ef;
 }
 
+.directory-page .site-header {
+    color: #0a1a2b;
+}
+
 .brand {
     display: flex;
     align-items: center;
@@ -64,6 +68,13 @@ button {
 .site-header h1 {
     margin: 0;
     font-size: 1.5rem;
+}
+
+.brand-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1a2b;
 }
 
 .site-nav {
