@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="pickTitle pickDesc">
-  <title id="pickTitle">Pick & Pay Logo</title>
+  <title id="pickTitle">Pick &amp; Pay Logo</title>
   <desc id="pickDesc">Retail icon with a shopping bag and modern mark.</desc>
   <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
   <path d="M34 40 h52 v48 a8 8 0 0 1 -8 8 h-36 a8 8 0 0 1 -8 -8 z" fill="#0f5461" />
