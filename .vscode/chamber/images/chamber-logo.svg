@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ruwa Town Chamber of Commerce Logo</title>
+  <desc id="desc">A stylized letter R inside a shield with sun rays representing community business growth.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeeff" />
+      <stop offset="100%" stop-color="#0f5461" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="32" ry="32" fill="#ffffff" />
+  <path d="M50 60 L150 60 L150 90 L110 90 L110 140 L90 140 L90 90 L50 90 Z" fill="url(#grad)" />
+  <circle cx="100" cy="135" r="40" fill="#0f5461" />
+  <path d="M85 90 L115 90 L110 110 L90 110 Z" fill="#ffffff" />
+  <path d="M95 75 L105 75 L105 95 L95 95 Z" fill="#ffffff" />
+  <g fill="#0f5461" opacity="0.75">
+    <rect x="30" y="28" width="20" height="80" rx="10" />
+    <rect x="150" y="28" width="20" height="80" rx="10" />
+    <rect x="45" y="18" width="110" height="20" rx="10" />
+  </g>
+</svg>
