@@ -1,0 +1,36 @@
+{
+    "householdName": "Mtisi",
+    "familyName": "Mtisi",
+    "movedIntoWard": "2026-06-15",
+    "numberOfPeople": 5,
+    "visitedByBishopric": false,
+    "members": [
+        {
+            "name": "Victor Mtisi",
+            "gender": "Male",
+            "birthdate": "1980-03-10",
+            "memberSince": "2024-05-20"
+        },
+        {
+            "name": "Patience Mtisi",
+            "gender": "Female",
+            "birthdate": "1974-11-25"
+        },
+        {
+            "name": "Pilani Mtisi",
+            "gender": "Male",
+            "birthdate": "2004-03-23"
+        },
+        {
+            "name": "Thabani Mtisi",
+            "gender": "Female",
+            "birthdate": "2009-10-04"
+        },
+        {
+            "name": "Vimbainashe Mtisi",
+            "gender": "Female",
+            "birthdate": "2010-12-05",
+            "memberSince": "2026-07-03"
+        }
+    ]
+}
