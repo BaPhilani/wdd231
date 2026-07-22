@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "companyName": "Tech Innovations",
+      "logo": "images/tech-innovations-logo.png",
+      "phone": "123-456-7890",
+      "address": "123 Tech Lane, Silicon Valley, CA",
+      "website": "https://www.techinnovations.com",
+      "membershipLevel": "Gold"
+    },
+    {
+      "companyName": "Green Solutions",
+      "logo": "images/green-solutions-logo.png",
+      "phone": "987-654-3210",
+      "address": "456 Eco St, Green City, CA",
+      "website": "https://www.greensolutions.com",
+      "membershipLevel": "Silver"
+    },
+    {
+      "companyName": "Creative Designs",
+      "logo": "images/creative-designs-logo.png",
+      "phone": "555-123-4567",
+      "address": "789 Art Ave, Design Town, CA",
+      "website": "https://www.creativedesigns.com",
+      "membershipLevel": "Gold"
+    },
+    {
+      "companyName": "Health & Wellness",
+      "logo": "images/health-wellness-logo.png",
+      "phone": "444-555-6666",
+      "address": "321 Wellness Blvd, Health City, CA",
+      "website": "https://www.healthandwellness.com",
+      "membershipLevel": "Silver"
+    },
+    {
+      "companyName": "Finance Experts",
+      "logo": "images/finance-experts-logo.png",
+      "phone": "222-333-4444",
+      "address": "654 Money St, Finance City, CA",
+      "website": "https://www.financeexperts.com",
+      "membershipLevel": "Gold"
+    }
+  ]
+}
