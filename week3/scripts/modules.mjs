@@ -33,7 +33,12 @@ const weatherConfig = {
 };
 
 function hasValidApiKey(apiKey) {
-    return Boolean(apiKey && !apiKey.includes('YOUR_OPENWEATHERMAP_API_KEY') && !apiKey.includes('YOUR_KEY'));
+    return Boolean(
+        apiKey
+        && apiKey.length > 20
+        && !apiKey.includes('YOUR_OPENWEATHERMAP_API_KEY')
+        && !apiKey.includes('YOUR_KEY')
+    );
 }
 
 function formatDate(dateString) {
@@ -237,7 +242,21 @@ async function loadWeather() {
         const [weatherResponse, forecastResponse] = await Promise.all([fetch(weatherUrl), fetch(forecastUrl)]);
 
         if (!weatherResponse.ok || !forecastResponse.ok) {
-            throw new Error('Weather service unavailable. Check API key and location settings.');
+            let detail = '';
+
+            if (!weatherResponse.ok) {
+                const weatherError = await weatherResponse.json().catch(() => null);
+                detail = weatherError?.message || weatherResponse.statusText;
+            } else if (!forecastResponse.ok) {
+                const forecastError = await forecastResponse.json().catch(() => null);
+                detail = forecastError?.message || forecastResponse.statusText;
+            }
+
+            if (weatherResponse.status === 401 || forecastResponse.status === 401) {
+                throw new Error('Invalid OpenWeatherMap API key. Update week3/scripts/config.js with a valid key.');
+            }
+
+            throw new Error(`Weather service unavailable: ${detail}`);
         }
 
         const weatherData = await weatherResponse.json();
@@ -262,7 +281,7 @@ async function loadWeather() {
             })
             .join('');
     } catch (error) {
-        weatherCurrent.innerHTML = '<p>Unable to retrieve weather data at this time.</p>';
+        weatherCurrent.innerHTML = `<p>${error.message}</p>`;
         forecastList.innerHTML = '';
         console.error(error);
     }
