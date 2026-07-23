@@ -1,9 +1,19 @@
 :root {
-    --surface: #f7fcff;
+    --surface: #f8fbff;
+    --surface-alt: #eef6f9;
+    --panel: #ffffff;
     --text: #1d2935;
+    --muted: #2f4d5e;
     --accent: #0f5461;
     --ink: #0a1a2b;
-    --white: #ffffff;
+    --line: #d4e8f3;
+    --line-soft: #e6eef3;
+    --hero-copy: #f3fbff;
+    --cta-bg: #ffd166;
+    --cta-text: #0b3d52;
+    --hero-panel: #082c3abf;
+    --shadow: 0 10px 24px #0f172a0f;
+    --hero-shadow: 0 16px 34px #0c314233;
 }
 
 * {
@@ -13,6 +23,7 @@
 body {
     margin: 0;
     font-family: Inter, system-ui, sans-serif;
+    line-height: 1.5;
     color: var(--text);
     background: radial-gradient(circle at top right, #d6ecff 0%, #eef5fb 35%, var(--surface) 100%);
 }
@@ -27,7 +38,7 @@ a {
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem 1.25rem;
-    border-bottom: 1px solid #d0e6ef;
+    border-bottom: 1px solid var(--line);
     background: #e5f6ff;
     color: var(--ink);
 }
@@ -61,7 +72,7 @@ a {
     justify-content: center;
     gap: 0.25rem;
     border: 0;
-    background: transparent;
+    background: none;
     padding: 0.25rem;
     cursor: pointer;
 }
@@ -80,7 +91,7 @@ a {
     top: 80px;
     background: #e5f6ff;
     padding: 0.6rem 1.25rem 1rem;
-    border-bottom: 1px solid #d0e6ef;
+    border-bottom: 1px solid var(--line);
 }
 
 .site-nav.open {
@@ -108,7 +119,7 @@ main {
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 16px 34px rgba(12, 49, 66, 0.2);
+    box-shadow: var(--hero-shadow);
 }
 
 .hero img {
@@ -122,7 +133,7 @@ main {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(8, 44, 58, 0.78) 15%, rgba(8, 44, 58, 0.3) 60%, rgba(8, 44, 58, 0.1) 100%);
+    background: linear-gradient(90deg, #082c3ac7 15%, #082c3a59 60%, #082c3a1a 100%);
 }
 
 .hero-content {
@@ -130,7 +141,10 @@ main {
     inset: auto 1rem 1rem 1rem;
     z-index: 1;
     max-width: 620px;
-    color: var(--white);
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    color: #ffffff;
+    background: var(--hero-panel);
 }
 
 .hero-content h1 {
@@ -140,7 +154,7 @@ main {
 
 .hero-content p {
     margin: 0;
-    color: #d9edf8;
+    color: var(--hero-copy);
 }
 
 .cta-link {
@@ -150,8 +164,8 @@ main {
     border-radius: 999px;
     font-weight: 700;
     text-decoration: none;
-    color: #0b3d52;
-    background: #ffd166;
+    color: var(--cta-text);
+    background: var(--cta-bg);
 }
 
 .home-grid {
@@ -163,9 +177,9 @@ main {
 .weather,
 .spotlights {
     background: var(--surface);
-    border: 1px solid #d4e8f3;
+    border: 1px solid var(--line);
     border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    box-shadow: var(--shadow);
     padding: 1rem;
     margin-bottom: 1.25rem;
 }
@@ -190,21 +204,23 @@ main {
 .forecast-item {
     padding: 0.85rem;
     border-radius: 12px;
-    background: var(--white);
-    border: 1px solid #e6eef3;
+    background: var(--panel);
+    border: 1px solid var(--line-soft);
 }
 
-.forecast-list {
-    padding-left: 1.2rem;
+.event-item p,
+.forecast-item p,
+.spotlight-card p {
+    color: var(--muted);
 }
 
 .weather-current {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 12px;
-    color: #0e4657;
+    color: var(--accent);
     background: linear-gradient(135deg, #e4f5ff, #f3fbff);
-    border: 1px solid #cde7f5;
+    border: 1px solid var(--line);
 }
 
 .weather-current .temp {
@@ -227,8 +243,8 @@ main {
 .spotlight-card {
     padding: 1rem;
     border-radius: 14px;
-    background: var(--white);
-    border: 1px solid #dbeaf3;
+    background: var(--panel);
+    border: 1px solid var(--line);
 }
 
 .spotlight-card img {
@@ -251,7 +267,7 @@ main {
     display: grid;
     gap: 1.5rem;
     color: var(--ink);
-    background: #eef6f9;
+    background: var(--surface-alt);
 }
 
 .footer-column h2 {
@@ -266,7 +282,7 @@ main {
     .site-nav {
         display: flex;
         position: static;
-        background: transparent;
+        background: none;
         border: 0;
         padding: 0;
         gap: 0.65rem;
@@ -279,8 +295,8 @@ main {
 
     .site-nav a.active,
     .site-nav a:hover {
-        background: #0f5461;
-        color: #fff;
+        background: var(--accent);
+        color: var(--panel);
     }
 
     .home-grid {
