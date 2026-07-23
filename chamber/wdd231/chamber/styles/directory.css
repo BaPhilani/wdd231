@@ -1,0 +1,123 @@
+/* Styles specific to the directory page */
+
+body.directory-page {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.site-header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.eyebrow {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.brand-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.site-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.site-nav a.active {
+    color: #007BFF;
+}
+
+.landing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+}
+
+.landing h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.landing h2 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.landing p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.view-controls {
+    margin-top: 20px;
+}
+
+.view-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.view-button.active {
+    background-color: #0056b3;
+}
+
+.directory-section {
+    padding: 20px;
+}
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-column {
+    margin-bottom: 20px;
+}
+
+.footer-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}

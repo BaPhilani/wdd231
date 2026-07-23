@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruwa Town Chamber of Commerce | Join Us</title>
+    <meta name="description" content="Join the Ruwa Town Chamber of Commerce and be part of a thriving community of local businesses." />
+    <meta name="author" content="Victor Mtisi" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/small.css" />
+    <link rel="stylesheet" href="../styles/large.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <script defer src="../scripts/navigation.js"></script>
+    <script defer src="../scripts/home.js"></script>
+</head>
+
+<body class="join-page">
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-logo" src="images/chamber-logo.svg" alt="Ruwa Town Chamber of Commerce logo" />
+            <div>
+                <p class="eyebrow">Ruwa Town Chamber of Commerce</p>
+                <p class="brand-title">Join Us</p>
+            </div>
+        </div>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Community gathering" class="hero-image" />
+            <div class="hero-text">
+                <h1>Join the Ruwa Town Chamber of Commerce</h1>
+                <p>Become a part of a vibrant community dedicated to supporting local businesses.</p>
+                <a href="#join-form" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <ul>
+                <li>Annual Business Expo - March 15, 2023</li>
+                <li>Networking Night - April 10, 2023</li>
+                <li>Community Clean-Up Day - May 5, 2023</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <!-- Weather data will be populated here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <h3>Spotlight Company 1</h3>
+                <p>Description of the spotlight company and its services.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Spotlight Company 2</h3>
+                <p>Description of the spotlight company and its services.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Spotlight Company 3</h3>
+                <p>Description of the spotlight company and its services.</p>
+            </div>
+        </section>
+
+        <section id="join-form">
+            <h2>Join the Chamber</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="business">Business Name:</label>
+                <input type="text" id="business" name="business" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2>Contact</h2>
+            <p>Ruwa Town Chamber of Commerce</p>
+            <p>2633 Herbert Chitepo street, Ruwa</p>
+            <p>info@ruwachamber.org</p>
+            <p>(+263) 77 123 4567</p>
+        </div>
+        <div class="footer-column">
+            <h2>Site Details</h2>
+            <p>Victor Mtisi</p>
+            <p>WDD 231</p>
+            <p>Last modification: <span id="lastModifiedDate"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Ruwa Town Chamber of Commerce</p>
+        </div>
+    </footer>
+</body>
+
+</html>

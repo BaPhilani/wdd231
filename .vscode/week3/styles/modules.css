@@ -1,0 +1,23 @@
+:root {
+    --surface: #f5f8fc;
+    --text: #1d2935;
+    --accent: #0f5461;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at top right, #d6ecff 0%, #eef5fb 35%, var(--surface) 100%);
+    padding: 2rem;
+}
+
+main {
+    max-width: 860px;
+    margin: 0 auto;
+}
