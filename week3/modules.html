@@ -4,22 +4,86 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modules</title>
+    <title>Ruwa Town Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="Welcome to the Ruwa Town Chamber of Commerce. Explore events, weather, and member spotlights." />
+    <meta name="author" content="Victor Mtisi" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/modules.css" />
 </head>
 
-<body>
+<body class="home-page">
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-logo" src="../chamber/images/chamber-logo.svg" alt="Ruwa Town Chamber of Commerce logo" />
+            <div>
+                <p class="eyebrow">Ruwa town Chamber of Commerce</p>
+                <p class="brand-title">Business Growth Hub</p>
+            </div>
+        </div>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="modules.html" class="active">Home</a>
+            <a href="../chamber/directory.html">Directory</a>
+            <a href="../chamber/join.html">Join</a>
+            <a href="../chamber/discover.html">Discover</a>
+        </nav>
+    </header>
+
     <main>
-        <h1>Week 3 Modules</h1>
-        <p>This page verifies your module setup in Five Server.</p>
-        <section aria-labelledby="listHeading">
-            <h2 id="listHeading">Loaded Items</h2>
-            <ul id="moduleList"></ul>
+        <section class="hero" aria-labelledby="heroTitle">
+            <img src="../chamber/images/hero-ruwa.svg" alt="Ruwa skyline illustration" />
+            <div class="hero-content">
+                <h1 id="heroTitle">Build Business Momentum in Ruwa</h1>
+                <p>Join a network of local leaders shaping growth, trade, and opportunity across our town.</p>
+                <a class="cta-link" href="../chamber/join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="events" aria-labelledby="eventsHeading">
+                <h2 id="eventsHeading">Current Events</h2>
+                <ul id="eventList" class="event-list"></ul>
+            </section>
+
+            <section class="weather" aria-labelledby="weatherHeading">
+                <h2 id="weatherHeading">Weather in Ruwa</h2>
+                <div id="weatherCurrent" class="weather-current" aria-live="polite"></div>
+                <h3>3-Day Forecast</h3>
+                <ul id="forecastList" class="forecast-list" aria-live="polite"></ul>
+            </section>
+        </div>
+
+        <section class="spotlights" aria-labelledby="spotlightHeading">
+            <h2 id="spotlightHeading">Member Spotlights</h2>
+            <div id="spotlightCards" class="spotlight-grid" aria-live="polite"></div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2>Contact</h2>
+            <p>Ruwa Town Chamber of Commerce</p>
+            <p>2633 Herbert Chitepo street, Ruwa</p>
+            <p>info@ruwachamber.org</p>
+            <p>(+263) 77 123 4567</p>
+        </div>
+        <div class="footer-column">
+            <h2>Site Details</h2>
+            <p>Victor Mtisi</p>
+            <p>WDD 231</p>
+            <p>Last modification: <span id="lastModifiedDate"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Ruwa Town Chamber of Commerce</p>
+        </div>
+    </footer>
+
+    <script src="scripts/config.js"></script>
     <script type="module" src="scripts/modules.mjs"></script>
 </body>
 
