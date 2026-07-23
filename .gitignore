@@ -1,0 +1,7 @@
+# Local API keys (do not commit)
+week3/scripts/config.js
+chamber/scripts/config.js
+
+# Optional environment files
+.env
+.env.*
