@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="styles/home.css" />
     <script defer src="../scripts/navigation.js"></script>
     <script defer src="scripts/site-info.js"></script>
+    <script defer src="scripts/join.js"></script>
 </head>
 
-<body class="home-page">
+<body class="join-page">
     <header class="site-header">
         <div class="brand">
             <img class="brand-logo" src="images/chamber-logo.svg" alt="Ruwa Town Chamber of Commerce logo" />
@@ -41,12 +42,154 @@
         </nav>
     </header>
 
-    <main>
-        <section class="events" aria-labelledby="joinHeading">
-            <h1 id="joinHeading">Join page coming next</h1>
-            <p>The full membership application form will be added in the next step of the course project.</p>
-            <p><a class="cta-link" href="index.html">Return to home</a></p>
+    <main class="join-main">
+        <section class="join-hero" aria-labelledby="joinHeading">
+            <h1 id="joinHeading">Membership Application</h1>
+            <p>Choose a membership level, submit your details, and we will follow up with next steps.</p>
         </section>
+
+        <div class="join-layout">
+            <section class="join-form-panel" aria-labelledby="formHeading">
+                <h2 id="formHeading">Application Form</h2>
+                <form class="join-form" method="get" action="thankyou.html">
+                    <label>
+                        <span>First Name</span>
+                        <input type="text" name="firstName" title="Applicant first name" autocomplete="given-name"
+                            required />
+                    </label>
+
+                    <label>
+                        <span>Last Name</span>
+                        <input type="text" name="lastName" title="Applicant last name" autocomplete="family-name"
+                            required />
+                    </label>
+
+                    <label>
+                        <span>Organizational Title</span>
+                        <input type="text" name="title" title="Organization title" autocomplete="organization-title"
+                            pattern="[A-Za-z\- ]{7,}" />
+                    </label>
+
+                    <label>
+                        <span>Email Address</span>
+                        <input type="email" name="email" title="Email address" autocomplete="email"
+                            placeholder="enquiry@ruwachamber.co.zw" required />
+                    </label>
+
+                    <label>
+                        <span>Mobile Phone Number</span>
+                        <input type="tel" name="phone" title="Mobile phone number" autocomplete="tel" required />
+                    </label>
+
+                    <label>
+                        <span>Business / Organization Name</span>
+                        <input type="text" name="organization" title="Business or organization name"
+                            autocomplete="organization" required />
+                    </label>
+
+                    <label class="membership-label">
+                        <span>Membership Level</span>
+                        <span class="membership-choice-grid">
+                            <span class="membership-choice-card">
+                                <input type="radio" name="membership" value="np" required />
+                                <span>NP Membership</span>
+                            </span>
+                            <span class="membership-choice-card">
+                                <input type="radio" name="membership" value="bronze" />
+                                <span>Bronze Membership</span>
+                            </span>
+                            <span class="membership-choice-card">
+                                <input type="radio" name="membership" value="silver" />
+                                <span>Silver Membership</span>
+                            </span>
+                            <span class="membership-choice-card">
+                                <input type="radio" name="membership" value="gold" />
+                                <span>Gold Membership</span>
+                            </span>
+                        </span>
+                    </label>
+
+                    <label>
+                        <span>Organization Description</span>
+                        <textarea name="description" title="Business or organization description" rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp" />
+
+                    <input type="submit" value="Submit Application" class="submit-button" />
+                </form>
+            </section>
+
+            <aside class="membership-panel" aria-labelledby="membershipHeading">
+                <h2 id="membershipHeading">Membership Levels</h2>
+                <div class="membership-card-grid">
+                    <article class="membership-card" style="--card-delay: 0s;">
+                        <h3>NP Membership</h3>
+                        <p>No fee for registered non-profit organizations.</p>
+                        <a href="#" data-modal="np-modal">More information</a>
+                    </article>
+                    <article class="membership-card" style="--card-delay: 0.12s;">
+                        <h3>Bronze Membership</h3>
+                        <p>Affordable entry membership with networking access.</p>
+                        <a href="#" data-modal="bronze-modal">More information</a>
+                    </article>
+                    <article class="membership-card" style="--card-delay: 0.24s;">
+                        <h3>Silver Membership</h3>
+                        <p>Expanded promotion, training, and event savings.</p>
+                        <a href="#" data-modal="silver-modal">More information</a>
+                    </article>
+                    <article class="membership-card" style="--card-delay: 0.36s;">
+                        <h3>Gold Membership</h3>
+                        <p>Maximum visibility with premium spotlight and benefits.</p>
+                        <a href="#" data-modal="gold-modal">More information</a>
+                    </article>
+                </div>
+            </aside>
+        </div>
+
+        <dialog id="np-modal" class="membership-modal">
+            <button type="button" class="dialog-close" aria-label="Close NP membership details">Close</button>
+            <h2>NP Membership</h2>
+            <p>Free membership for verified non-profit organizations.</p>
+            <ul>
+                <li>Basic directory listing</li>
+                <li>Access to public chamber events</li>
+                <li>Community announcements</li>
+            </ul>
+        </dialog>
+
+        <dialog id="bronze-modal" class="membership-modal">
+            <button type="button" class="dialog-close" aria-label="Close Bronze membership details">Close</button>
+            <h2>Bronze Membership</h2>
+            <p>Entry-level business membership for organizations growing their local reach.</p>
+            <ul>
+                <li>Directory listing</li>
+                <li>Quarterly networking invites</li>
+                <li>Member pricing on selected events</li>
+            </ul>
+        </dialog>
+
+        <dialog id="silver-modal" class="membership-modal">
+            <button type="button" class="dialog-close" aria-label="Close Silver membership details">Close</button>
+            <h2>Silver Membership</h2>
+            <p>Growth membership with added visibility and training access.</p>
+            <ul>
+                <li>Featured directory placement</li>
+                <li>Training workshop discounts</li>
+                <li>Occasional home-page spotlight consideration</li>
+            </ul>
+        </dialog>
+
+        <dialog id="gold-modal" class="membership-modal">
+            <button type="button" class="dialog-close" aria-label="Close Gold membership details">Close</button>
+            <h2>Gold Membership</h2>
+            <p>Premium membership with top-tier promotion and direct chamber support.</p>
+            <ul>
+                <li>Priority homepage spotlight opportunities</li>
+                <li>Event sponsorship and advertising options</li>
+                <li>Priority invitations and stronger discount benefits</li>
+            </ul>
+        </dialog>
     </main>
 
     <footer class="site-footer">

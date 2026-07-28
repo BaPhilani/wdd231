@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruwa Town Chamber of Commerce | Thank You</title>
+    <meta name="description" content="Thank you for joining the Ruwa Town Chamber of Commerce." />
+    <meta name="author" content="Victor Mtisi" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/small.css" />
+    <link rel="stylesheet" href="../styles/large.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <script defer src="scripts/site-info.js"></script>
+    <script defer src="scripts/thankyou.js"></script>
+</head>
+
+<body class="thank-you-page">
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-logo" src="images/chamber-logo.svg" alt="Ruwa Town Chamber of Commerce logo" />
+            <div>
+                <p class="eyebrow">Ruwa town Chamber of Commerce</p>
+                <p class="brand-title">Thank You</p>
+            </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main class="thank-you-main">
+        <section class="thank-you-hero" aria-labelledby="thankYouHeading">
+            <h1 id="thankYouHeading">Thank you for your application</h1>
+            <p>Your membership request has been received. Review your submitted details below.</p>
+        </section>
+
+        <section class="submission-summary" aria-labelledby="summaryHeading">
+            <h2 id="summaryHeading">Submitted Information</h2>
+            <dl class="summary-grid">
+                <div>
+                    <dt>First Name</dt>
+                    <dd id="summaryFirstName"></dd>
+                </div>
+                <div>
+                    <dt>Last Name</dt>
+                    <dd id="summaryLastName"></dd>
+                </div>
+                <div>
+                    <dt>Email Address</dt>
+                    <dd id="summaryEmail"></dd>
+                </div>
+                <div>
+                    <dt>Mobile Number</dt>
+                    <dd id="summaryPhone"></dd>
+                </div>
+                <div>
+                    <dt>Business Name</dt>
+                    <dd id="summaryOrganization"></dd>
+                </div>
+                <div>
+                    <dt>Timestamp</dt>
+                    <dd id="summaryTimestamp"></dd>
+                </div>
+            </dl>
+            <p><a class="cta-link" href="index.html">Return to Home</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2>Contact</h2>
+            <p>Ruwa Town Chamber of Commerce</p>
+            <p>2633 Herbert Chitepo street, Ruwa</p>
+            <p>info@ruwachamber.org</p>
+            <p>(+263) 77 123 4567</p>
+        </div>
+        <div class="footer-column">
+            <h2>Site Details</h2>
+            <p>Victor Mtisi</p>
+            <p>WDD 231</p>
+            <p>Last modification: <span id="lastModifiedDate"></span></p>
+            <p>&copy; <span id="copyrightYear"></span> Ruwa Town Chamber of Commerce</p>
+        </div>
+    </footer>
+</body>
+
+</html>
