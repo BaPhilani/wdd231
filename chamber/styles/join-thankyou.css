@@ -185,6 +185,34 @@
     text-decoration: underline;
 }
 
+.delay-0 {
+    --card-delay: 0s;
+}
+
+.delay-1 {
+    --card-delay: 0.08s;
+}
+
+.delay-2 {
+    --card-delay: 0.16s;
+}
+
+.delay-3 {
+    --card-delay: 0.24s;
+}
+
+.delay-4 {
+    --card-delay: 0.12s;
+}
+
+.delay-5 {
+    --card-delay: 0.24s;
+}
+
+.delay-6 {
+    --card-delay: 0.36s;
+}
+
 @keyframes card-rise {
     from {
         opacity: 0;
