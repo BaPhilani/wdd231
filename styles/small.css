@@ -260,6 +260,89 @@ section p,
     color: var(--dark);
 }
 
+#course-details {
+    position: relative;
+    width: min(92vw, 620px);
+    margin: auto;
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    padding: 1.1rem 1.1rem 1rem;
+    background: var(--white);
+    color: var(--text);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.24);
+}
+
+#course-details::backdrop {
+    background: rgba(10, 26, 43, 0.62);
+}
+
+#course-details h2 {
+    margin: 0 2.8rem 0.4rem 0;
+    color: var(--dark);
+}
+
+#course-details .dialog-status {
+    display: inline-block;
+    margin: 0 0 0.9rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: var(--text);
+    font-weight: 600;
+}
+
+#course-details .dialog-details {
+    display: grid;
+    gap: 0.7rem;
+    margin: 0;
+}
+
+#course-details .dialog-details div {
+    border: 1px solid var(--border);
+    border-radius: 0.65rem;
+    padding: 0.55rem 0.65rem;
+    background: var(--surface);
+}
+
+#course-details dt {
+    margin: 0;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+#course-details dd {
+    margin: 0.2rem 0 0;
+    color: var(--muted);
+}
+
+#course-details .dialog-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--dark);
+    font: inherit;
+    cursor: pointer;
+}
+
+#course-details .dialog-close:hover,
+#course-details .dialog-close:focus-visible {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.course-card {
+    cursor: pointer;
+}
+
+.course-card:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+}
+
 footer {
     background: var(--dark);
     color: var(--white);
