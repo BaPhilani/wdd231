@@ -87,27 +87,25 @@
                             autocomplete="organization" required />
                     </label>
 
-                    <label class="membership-label">
-                        <span>Membership Level</span>
-                        <span class="membership-choice-grid">
-                            <span class="membership-choice-card">
-                                <input type="radio" name="membership" value="np" required />
-                                <span>NP Membership</span>
-                            </span>
-                            <span class="membership-choice-card">
-                                <input type="radio" name="membership" value="bronze" />
-                                <span>Bronze Membership</span>
-                            </span>
-                            <span class="membership-choice-card">
-                                <input type="radio" name="membership" value="silver" />
-                                <span>Silver Membership</span>
-                            </span>
-                            <span class="membership-choice-card">
-                                <input type="radio" name="membership" value="gold" />
-                                <span>Gold Membership</span>
-                            </span>
-                        </span>
-                    </label>
+                    <fieldset class="membership-fieldset">
+                        <legend>Membership Level</legend>
+                        <label class="membership-choice-card" style="--card-delay: 0s;">
+                            <input type="radio" name="membership" value="np" required />
+                            <span>NP Membership</span>
+                        </label>
+                        <label class="membership-choice-card" style="--card-delay: 0.08s;">
+                            <input type="radio" name="membership" value="bronze" />
+                            <span>Bronze Membership</span>
+                        </label>
+                        <label class="membership-choice-card" style="--card-delay: 0.16s;">
+                            <input type="radio" name="membership" value="silver" />
+                            <span>Silver Membership</span>
+                        </label>
+                        <label class="membership-choice-card" style="--card-delay: 0.24s;">
+                            <input type="radio" name="membership" value="gold" />
+                            <span>Gold Membership</span>
+                        </label>
+                    </fieldset>
 
                     <label>
                         <span>Organization Description</span>

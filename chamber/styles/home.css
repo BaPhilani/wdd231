@@ -1,27 +1,37 @@
-.home-page .site-header {
+.home-page .site-header,
+.join-page .site-header,
+.thank-you-page .site-header {
     background: #e5f6ff;
     border-bottom: 1px solid #d0e6ef;
     color: var(--dark);
 }
 
-.home-page .brand {
+.home-page .brand,
+.join-page .brand,
+.thank-you-page .brand {
     display: flex;
     align-items: center;
     gap: 1rem;
     min-width: 0;
 }
 
-.home-page .brand-logo {
+.home-page .brand-logo,
+.join-page .brand-logo,
+.thank-you-page .brand-logo {
     width: 64px;
 }
 
-.home-page .eyebrow {
+.home-page .eyebrow,
+.join-page .eyebrow,
+.thank-you-page .eyebrow {
     margin: 0 0 0.35rem;
     color: #0f5461;
     text-transform: uppercase;
 }
 
-.home-page .brand-title {
+.home-page .brand-title,
+.join-page .brand-title,
+.thank-you-page .brand-title {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
@@ -200,7 +210,9 @@
     text-decoration: underline;
 }
 
-.home-page .site-footer {
+.home-page .site-footer,
+.join-page .site-footer,
+.thank-you-page .site-footer {
     padding: 2rem;
     display: grid;
     gap: 1.5rem;
@@ -265,16 +277,6 @@
     font-weight: 600;
 }
 
-.membership-label {
-    display: grid;
-    gap: 0.6rem;
-}
-
-.membership-choice-grid {
-    display: grid;
-    gap: 0.75rem;
-}
-
 .membership-choice-card {
     display: flex;
     align-items: center;
@@ -307,6 +309,7 @@
 .join-form input:focus-visible,
 .join-form textarea:focus-visible,
 .membership-card a:focus-visible,
+.site-nav a:focus-visible,
 .submit-button:focus-visible,
 .membership-modal .dialog-close:focus-visible {
     outline: 3px solid var(--accent-soft);
@@ -328,9 +331,6 @@
 }
 
 .membership-fieldset label {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
     font-weight: 600;
 }
 
