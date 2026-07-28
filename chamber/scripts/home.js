@@ -29,7 +29,12 @@ const weatherConfig = {
 };
 
 function hasValidApiKey(apiKey) {
-    return Boolean(apiKey && !apiKey.includes('YOUR_OPENWEATHERMAP_API_KEY') && !apiKey.includes('YOUR_KEY'));
+    return Boolean(
+        apiKey
+        && apiKey.length > 20
+        && !apiKey.includes('YOUR_OPENWEATHERMAP_API_KEY')
+        && !apiKey.includes('YOUR_KEY')
+    );
 }
 
 function renderEvents() {
@@ -179,7 +184,7 @@ async function loadWeather() {
 
     if (!hasValidApiKey(weatherConfig.apiKey)) {
         weatherCurrent.innerHTML =
-            '<p>Add your OpenWeatherMap key in a scripts/config.js file as window.CHAMBER_CONFIG = { openWeatherApiKey: "YOUR_KEY" }.</p>';
+            '<p>Add your OpenWeatherMap key in chamber/scripts/config.js as window.CHAMBER_CONFIG = { openWeatherApiKey: "YOUR_KEY" }.</p>';
         forecastList.innerHTML = '';
         return;
     }
@@ -192,18 +197,45 @@ async function loadWeather() {
         const [weatherResponse, forecastResponse] = await Promise.all([fetch(weatherUrl), fetch(forecastUrl)]);
 
         if (!weatherResponse.ok || !forecastResponse.ok) {
-            throw new Error('Weather service unavailable. Check API key and location settings.');
+            let detail = '';
+
+            if (!weatherResponse.ok) {
+                const weatherError = await weatherResponse.json().catch(() => null);
+                detail = weatherError?.message || weatherResponse.statusText;
+            } else if (!forecastResponse.ok) {
+                const forecastError = await forecastResponse.json().catch(() => null);
+                detail = forecastError?.message || forecastResponse.statusText;
+            }
+
+            if (weatherResponse.status === 401 || forecastResponse.status === 401) {
+                throw new Error('Invalid OpenWeatherMap API key. Update chamber/scripts/config.js with a valid key.');
+            }
+
+            throw new Error(`Weather service unavailable: ${detail}`);
         }
 
         const weatherData = await weatherResponse.json();
         const forecastData = await forecastResponse.json();
+        const iconCode = weatherData.weather?.[0]?.icon;
+        const iconDescription = weatherData.weather?.[0]?.description || 'Current weather';
+        const weatherIcon = iconCode
+            ? `<img src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="${iconDescription}" width="64" height="64" loading="lazy">`
+            : '';
 
         weatherCurrent.innerHTML = `
             <p class="temp">${Math.round(weatherData.main.temp)}&deg;C</p>
             <p class="desc">${weatherData.weather[0].description}</p>
+            ${weatherIcon}
+            <p>Humidity: ${weatherData.main.humidity}%</p>
+            <p>Wind: ${Math.round(weatherData.wind.speed)} m/s</p>
         `;
 
         const nextThree = selectNoonForecast(forecastData.list);
+        if (nextThree.length === 0) {
+            forecastList.innerHTML = '<li class="forecast-item">Forecast is temporarily unavailable.</li>';
+            return;
+        }
+
         forecastList.innerHTML = nextThree
             .map((entry) => {
                 const date = new Date(entry.dt_txt);
@@ -217,7 +249,7 @@ async function loadWeather() {
             })
             .join('');
     } catch (error) {
-        weatherCurrent.innerHTML = '<p>Unable to retrieve weather data at this time.</p>';
+        weatherCurrent.innerHTML = `<p>${error.message}</p>`;
         forecastList.innerHTML = '';
         console.error(error);
     }

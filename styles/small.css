@@ -116,7 +116,10 @@ a {
 
 .site-nav a:hover,
 .site-nav a.active {
-    color: var(--accent);
+    color: var(--white);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2rem;
     transform: translateX(2px);
 }
 
