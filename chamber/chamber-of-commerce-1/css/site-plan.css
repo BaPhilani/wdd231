@@ -120,8 +120,29 @@ ul {
     border: 2px dashed #444;
     background-color: #fff;
     color: #111;
-    min-height: 170px;
+    min-height: 320px;
     padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.wireframe-box h3 {
+    margin: 0;
+}
+
+.wireframe-caption {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.wireframe-preview {
+    flex: 1;
+    width: 100%;
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    border-radius: 0.4rem;
+    background: #f9f7f2;
 }
 
 a {

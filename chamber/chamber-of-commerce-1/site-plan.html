@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&family=Fira+Sans+Condensed:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/site-plan.css">
+    <script src="../scripts/site-info.js" defer></script>
 </head>
 
 <body>
@@ -100,20 +101,22 @@
             </p>
 
             <div class="wireframe-grid">
-                <article class="wireframe-box" aria-label="Small viewport wireframe placeholder">
+                <article class="wireframe-box" aria-label="Small viewport wireframe preview">
                     <h3>Small View (Mobile)</h3>
-                    <p>
-                        Add your hand-drawn mobile wireframe image here.
-                        Recommended filename: images/wireframe-home-small.jpg
-                    </p>
+                    <p class="wireframe-caption">Mobile wireframe for the chamber homepage.</p>
+                    <embed class="wireframe-preview" src="../images/Mobile view wireframe_final.pdf"
+                        type="application/pdf" title="Mobile wireframe PDF">
+                    </embed>
+                    <a href="../images/Mobile view wireframe_final.pdf" target="_blank" rel="noopener">Open PDF</a>
                 </article>
 
-                <article class="wireframe-box" aria-label="Large viewport wireframe placeholder">
+                <article class="wireframe-box" aria-label="Large viewport wireframe preview">
                     <h3>Large View (Desktop or Tablet)</h3>
-                    <p>
-                        Add your hand-drawn large viewport wireframe image here.
-                        Recommended filename: images/wireframe-home-large.jpg
-                    </p>
+                    <p class="wireframe-caption">Desktop wireframe for the chamber homepage.</p>
+                    <embed class="wireframe-preview" src="../images/desktop_wireframe.pdf" type="application/pdf"
+                        title="Desktop wireframe PDF">
+                    </embed>
+                    <a href="../images/desktop_wireframe.pdf" target="_blank" rel="noopener">Open PDF</a>
                 </article>
             </div>
         </section>
@@ -135,7 +138,9 @@
     </main>
 
     <footer>
-        <p>Document status: Draft v1 | Last updated: August 2026</p>
+        <p>Document status: Draft v1</p>
+        <p>Last modification: <span id="lastModifiedDate"></span></p>
+        <p>&copy; <span id="copyrightYear"></span> Ruwa Chamber of Commerce</p>
     </footer>
 </body>
 
