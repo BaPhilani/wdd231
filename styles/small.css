@@ -334,10 +334,6 @@ section p,
     color: var(--white);
 }
 
-.course-card {
-    cursor: pointer;
-}
-
 .course-card:focus-visible {
     outline: 3px solid var(--accent-soft);
     outline-offset: 2px;
