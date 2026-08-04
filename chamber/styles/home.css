@@ -1,3 +1,14 @@
+.home-page,
+.join-page,
+.thank-you-page {
+    --chamber-white: #ffffff;
+    --chamber-primary: #0f5461;
+    --chamber-surface: #f7fcff;
+    --chamber-border-soft: #d4e8f3;
+    --chamber-border: #dbeaf3;
+    --chamber-panel-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
 .home-page .site-header,
 .join-page .site-header,
 .thank-you-page .site-header {
@@ -25,7 +36,7 @@
 .join-page .eyebrow,
 .thank-you-page .eyebrow {
     margin: 0 0 0.35rem;
-    color: #0f5461;
+    color: var(--chamber-primary);
     text-transform: uppercase;
 }
 
@@ -72,14 +83,14 @@
     max-width: 620px;
     padding: 1rem 1.25rem;
     border-radius: 14px;
-    color: #ffffff;
+    color: var(--chamber-white);
     background: rgba(8, 44, 58, 0.75);
 }
 
 .home-page .hero-content h1 {
     margin: 0 0 0.5rem;
     font-size: clamp(1.9rem, 3vw, 2.8rem);
-    color: #ffffff;
+    color: var(--chamber-white);
 }
 
 .home-page .hero-content p {
@@ -112,10 +123,10 @@
 .home-page .events,
 .home-page .weather,
 .home-page .spotlights {
-    background: #f7fcff;
-    border: 1px solid #d4e8f3;
+    background: var(--chamber-surface);
+    border: 1px solid var(--chamber-border-soft);
     border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    box-shadow: var(--chamber-panel-shadow);
 }
 
 .home-page .event-list,
@@ -177,8 +188,8 @@
 .home-page .spotlight-card {
     padding: 1rem;
     border-radius: 14px;
-    background: #ffffff;
-    border: 1px solid #dbeaf3;
+    background: var(--chamber-white);
+    border: 1px solid var(--chamber-border);
 }
 
 .home-page .spotlight-card img {
@@ -197,7 +208,7 @@
 .home-page .spotlight-card .membership {
     margin: 0.4rem 0;
     font-weight: 700;
-    color: #0f5461;
+    color: var(--chamber-primary);
 }
 
 .home-page .spotlight-card p {
@@ -206,7 +217,7 @@
 }
 
 .home-page .spotlight-card a {
-    color: #0f5461;
+    color: var(--chamber-primary);
     text-decoration: underline;
 }
 
@@ -233,10 +244,10 @@
 .join-form-panel,
 .membership-panel,
 .submission-summary {
-    background: #f7fcff;
-    border: 1px solid #d4e8f3;
+    background: var(--chamber-surface);
+    border: 1px solid var(--chamber-border-soft);
     border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    box-shadow: var(--chamber-panel-shadow);
 }
 
 .join-hero,
@@ -354,15 +365,15 @@
 .membership-card {
     padding: 1rem;
     border-radius: 14px;
-    background: #ffffff;
-    border: 1px solid #dbeaf3;
+    background: var(--chamber-white);
+    border: 1px solid var(--chamber-border);
     animation: card-rise 0.7s ease both;
     animation-delay: var(--card-delay, 0s);
 }
 
 .membership-card h3 {
     margin-top: 0;
-    color: #0f5461;
+    color: var(--chamber-primary);
 }
 
 .membership-card p {
@@ -370,7 +381,7 @@
 }
 
 .membership-card a {
-    color: #0f5461;
+    color: var(--chamber-primary);
     font-weight: 700;
     text-decoration: underline;
 }
@@ -466,10 +477,10 @@
 .discover-summary,
 .visit-message,
 .discover-gallery {
-    background: #f7fcff;
-    border: 1px solid #d4e8f3;
+    background: var(--chamber-surface);
+    border: 1px solid var(--chamber-border-soft);
     border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    box-shadow: var(--chamber-panel-shadow);
 }
 
 .discover-summary {
@@ -483,7 +494,7 @@
 
 .visit-message {
     padding: 1rem 1.25rem;
-    color: #0f5461;
+    color: var(--chamber-primary);
     font-weight: 700;
     background: linear-gradient(135deg, #e8f7ff 0%, #f7fcff 100%);
 }
@@ -519,15 +530,15 @@
     display: grid;
     gap: 0.7rem;
     padding: 1rem;
-    border: 1px solid #dbeaf3;
+    border: 1px solid var(--chamber-border);
     border-radius: 14px;
-    background: #ffffff;
+    background: var(--chamber-white);
 }
 
 .discover-card h2 {
     margin: 0;
     font-size: 1.15rem;
-    color: #0f5461;
+    color: var(--chamber-primary);
 }
 
 .discover-card figure {
