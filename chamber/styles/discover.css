@@ -30,7 +30,7 @@ img {
 }
 
 a {
-    color: inherit;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ a {
     border: 0;
     padding: 0.2rem;
     cursor: pointer;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
 }
 
 .nav-toggle span {
