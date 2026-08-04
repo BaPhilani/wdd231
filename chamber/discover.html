@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/home.css" />
     <script defer src="../scripts/navigation.js"></script>
     <script defer src="scripts/site-info.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body class="home-page">
@@ -41,47 +42,27 @@
         </nav>
     </header>
 
-    <main>
-        <section class="events" aria-labelledby="discoverHeading">
-            <h1 id="discoverHeading">Discover Ruwa Opportunities</h1>
-            <p>Explore where commerce, community, and innovation are growing fastest across Ruwa.</p>
-            <p><a class="cta-link" href="join.html">Become a Member</a></p>
+    <main class="discover-main">
+        <section class="discover-intro" aria-labelledby="discoverHeading">
+            <div class="discover-summary">
+                <p class="eyebrow">Why Ruwa</p>
+                <h1 id="discoverHeading">Discover the growth, lifestyle, and opportunity that define Ruwa</h1>
+                <p>
+                    Ruwa continues to grow as a connected residential and business hub with a young workforce,
+                    accessible transport corridors, and a welcoming community atmosphere that appeals to visitors and
+                    members alike.
+                </p>
+                <p><a class="cta-link" href="join.html">Become a Member</a></p>
+            </div>
+            <aside class="visit-message" id="visitMessage" role="status" aria-live="polite"></aside>
         </section>
 
-        <section class="spotlights" aria-labelledby="districtHeading">
-            <h2 id="districtHeading">Business District Highlights</h2>
-            <div class="feature-grid">
-                <article class="feature-card">
-                    <h3>Town Centre Retail Corridor</h3>
-                    <p>High foot traffic and mixed retail make this zone ideal for customer-facing businesses.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Windsor Industrial Cluster</h3>
-                    <p>Warehousing, manufacturing, and service companies benefit from strong road access.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Emerging Tech Services Belt</h3>
-                    <p>Young digital startups and service firms are building momentum with local demand.</p>
-                </article>
+        <section class="discover-gallery" aria-labelledby="galleryHeading">
+            <div class="gallery-heading">
+                <h2 id="galleryHeading">Eight places that shape Ruwa</h2>
+                <p>These landmarks and community spaces highlight the area’s business energy and lifestyle appeal.</p>
             </div>
-        </section>
-
-        <section class="weather" aria-labelledby="visitHeading">
-            <h2 id="visitHeading">Plan Your Chamber Visit</h2>
-            <div class="info-panels">
-                <article class="info-panel">
-                    <h3>Weekly Networking</h3>
-                    <p>Tuesdays at 17:30, Ruwa Civic Hall Annex</p>
-                </article>
-                <article class="info-panel">
-                    <h3>Business Advisory Desk</h3>
-                    <p>Mon to Fri, 09:00 to 15:00, walk-ins welcome</p>
-                </article>
-                <article class="info-panel">
-                    <h3>Investor Roundtables</h3>
-                    <p>First Friday of each month, limited seats</p>
-                </article>
-            </div>
+            <div class="discover-grid" id="discoverGrid"></div>
         </section>
     </main>
 
