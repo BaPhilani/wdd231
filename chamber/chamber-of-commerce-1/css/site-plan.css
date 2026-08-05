@@ -1,6 +1,6 @@
 :root {
     --color-primary: #0f4c5c;
-    --color-accent: #e09f3e;
+    --color-accent: #8a5a10;
     --color-bg: #fff8ec;
     --color-surface: #ffffff;
     --color-text: #1f2933;
@@ -54,6 +54,17 @@ h1 {
 .intro {
     margin: 0;
     max-width: 68ch;
+}
+
+nav {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav a {
+    font-weight: 700;
 }
 
 main {
