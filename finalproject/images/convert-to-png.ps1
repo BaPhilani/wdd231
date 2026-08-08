@@ -5,7 +5,7 @@ param(
 Set-Location $PSScriptRoot
 $targetDir = Resolve-Path $SourceDir
 
-$extensions = @("*.jpg", "*.jpeg", "*.webp", "*.bmp", "*.tif", "*.tiff", "*.gif", "*.avif")
+$extensions = @("*.jpg", "*.jpeg", "*.webp", "*.bmp", "*.tif", "*.tiff", "*.gif", "*.avif", "*.pdf")
 $files = foreach ($ext in $extensions) {
     Get-ChildItem -Path $targetDir -Filter $ext -File -ErrorAction SilentlyContinue
 }
@@ -26,7 +26,8 @@ foreach ($file in $files) {
     & magick "$($file.FullName)" -strip -quality 90 "$outFile"
     if ($LASTEXITCODE -eq 0) {
         Write-Host "Converted: $($file.Name) -> $([System.IO.Path]::GetFileName($outFile))"
-    } else {
+    }
+    else {
         Write-Warning "Failed: $($file.Name)"
     }
 }

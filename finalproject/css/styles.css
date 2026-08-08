@@ -117,7 +117,7 @@ h2 {
     color: var(--brand-red);
 }
 
-.btn {
+.pavi-button {
     border: 0;
     border-radius: 0.45rem;
     padding: 0.55rem 0.8rem;
@@ -125,12 +125,12 @@ h2 {
     cursor: pointer;
 }
 
-.btn-primary {
+.pavi-button-primary {
     background: var(--brand-red);
     color: #fff;
 }
 
-.btn-secondary {
+.pavi-button-secondary {
     background: var(--brand-blue);
     color: #fff;
 }
@@ -141,25 +141,25 @@ h2 {
     flex-wrap: wrap;
 }
 
-.cards {
+.pavi-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0.8rem;
     margin-top: 0.8rem;
 }
 
-.card {
+.pavi-card {
     border: 1px solid var(--line);
     border-radius: 0.6rem;
     padding: 0.8rem;
     background: #fff;
 }
 
-.card p {
+.pavi-card p {
     margin: 0.35rem 0;
 }
 
-.card .price {
+.pavi-card .price {
     color: var(--brand-red);
     font-weight: 800;
 }

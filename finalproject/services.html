@@ -10,7 +10,7 @@
     <meta property="og:title" content="PAVI Projects | Services">
     <meta property="og:description"
         content="View service options and details for residential and commercial technical solutions.">
-    <meta property="og:image" content="images/favicon-pv.svg">
+    <meta property="og:image" content="https://baphilani.github.io/wdd231/finalproject/images/favicon-pv.svg">
     <meta property="og:url" content="https://baphilani.github.io/wdd231/finalproject/services.html">
     <title>PAVI Projects | Services</title>
     <link rel="icon" href="images/favicon-pv.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/services.js"></script>
@@ -45,10 +45,11 @@
             <p>Browse available service packages and open each card for more details.</p>
 
             <div class="filter-bar" aria-label="Service filters">
-                <button class="btn btn-primary" type="button" data-filter="all">All</button>
-                <button class="btn btn-secondary" type="button" data-filter="solar">Solar</button>
-                <button class="btn btn-secondary" type="button" data-filter="security">Security</button>
-                <button class="btn btn-secondary" type="button" data-filter="maintenance">Maintenance</button>
+                <button class="pavi-button pavi-button-primary" type="button" data-filter="all">All</button>
+                <button class="pavi-button pavi-button-secondary" type="button" data-filter="solar">Solar</button>
+                <button class="pavi-button pavi-button-secondary" type="button" data-filter="security">Security</button>
+                <button class="pavi-button pavi-button-secondary" type="button"
+                    data-filter="maintenance">Maintenance</button>
                 <label for="sortBy">Sort:</label>
                 <select id="sortBy" name="sortBy">
                     <option value="name">Name</option>
@@ -57,7 +58,7 @@
                 </select>
             </div>
 
-            <div id="serviceCards" class="cards" aria-live="polite"></div>
+            <div id="serviceCards" class="pavi-cards" aria-live="polite"></div>
         </section>
 
         <dialog id="serviceModal" aria-label="Service details">

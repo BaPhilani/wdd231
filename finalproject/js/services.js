@@ -39,7 +39,7 @@ function openModal(service) {
         <p><strong>Estimated Duration:</strong> ${service.duration}</p>
         <p><strong>Status:</strong> ${service.availability}</p>
         <p>${service.summary}</p>
-        <button class="btn btn-primary" id="closeModalBtn" type="button">Close</button>
+        <button class="pavi-button pavi-button-primary" id="closeModalBtn" type="button">Close</button>
     `;
     modal.showModal();
     const closeButton = document.querySelector("#closeModalBtn");
@@ -52,13 +52,13 @@ function renderCards() {
     const sorted = sortServices(filtered);
 
     listEl.innerHTML = sorted.map((service) => `
-        <article class="card">
+        <article class="pavi-card">
             <h3>${service.name}</h3>
             <p><strong>Category:</strong> ${service.category}</p>
             <p class="price">US$${service.priceUsd}</p>
             <p><strong>Availability:</strong> ${service.availability}</p>
             <p>${service.summary}</p>
-            <button class="btn btn-secondary" type="button" data-id="${service.id}">View Details</button>
+            <button class="pavi-button pavi-button-secondary" type="button" data-id="${service.id}">View Details</button>
         </article>
     `).join("");
 
