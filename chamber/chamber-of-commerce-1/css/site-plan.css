@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #0f4c5c;
-    --color-accent: #8a5a10;
-    --color-bg: #fff8ec;
+    --color-primary: #0d3b66;
+    --color-accent: #2b7fff;
+    --color-bg: #f8fbff;
     --color-surface: #ffffff;
     --color-text: #1f2933;
-    --color-border: #d9cbb5;
+    --color-border: #d7e4f2;
 }
 
 * {
@@ -13,9 +13,9 @@
 
 body {
     margin: 0;
-    background: linear-gradient(180deg, var(--color-bg) 0%, #f8f2e8 100%);
+    background: linear-gradient(180deg, var(--color-bg) 0%, #eef6ff 100%);
     color: var(--color-text);
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
 
@@ -42,7 +42,7 @@ header {
 h1,
 h2,
 h3 {
-    font-family: "Merriweather", serif;
+    font-family: "Poppins", sans-serif;
     color: var(--color-primary);
 }
 
@@ -114,11 +114,11 @@ ul {
 }
 
 .chip-accent {
-    background: #e09f3e;
+    background: #2b7fff;
 }
 
 .chip-support {
-    background: #fff8ec;
+    background: #f8f8f2;
 }
 
 .wireframe-grid {
@@ -153,7 +153,13 @@ ul {
     min-height: 220px;
     border: 1px solid var(--color-border);
     border-radius: 0.4rem;
-    background: #f9f7f2;
+    background: linear-gradient(135deg, #f4f9ff 0%, #eef5ff 100%);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: 1rem;
 }
 
 a {
