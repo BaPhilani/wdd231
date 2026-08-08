@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #c1121f;
+    --color-primary: #8b0a1a;
     --color-accent: #1d4ed8;
-    --color-bg: #fdf5f6;
+    --color-bg: #fcf1f3;
     --color-surface: #ffffff;
     --color-text: #1f2933;
-    --color-border: #e8d7dc;
+    --color-border: #dfc9cf;
 }
 
 * {
@@ -110,7 +110,7 @@ ul {
 }
 
 .chip-primary {
-    background: #c1121f;
+    background: #8b0a1a;
 }
 
 .chip-accent {
@@ -174,7 +174,7 @@ a {
 
 a:hover,
 a:focus-visible {
-    color: #8b0d17;
+    color: #650812;
 }
 
 footer {

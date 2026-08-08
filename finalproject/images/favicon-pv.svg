@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PV favicon">
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#8B0A1A"/>
+  <path d="M18 14V50" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M18 14H31A10 10 0 0 1 31 34H18" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34 16L44 48L54 16" fill="none" stroke="#1D4ED8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
