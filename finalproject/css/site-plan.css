@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #0d3b66;
-    --color-accent: #2b7fff;
-    --color-bg: #f8fbff;
+    --color-primary: #c1121f;
+    --color-accent: #1d4ed8;
+    --color-bg: #fdf5f6;
     --color-surface: #ffffff;
     --color-text: #1f2933;
-    --color-border: #d7e4f2;
+    --color-border: #e8d7dc;
 }
 
 * {
@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(180deg, var(--color-bg) 0%, #eef6ff 100%);
+    background: linear-gradient(180deg, var(--color-bg) 0%, #eef4ff 100%);
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     line-height: 1.6;
@@ -110,11 +110,11 @@ ul {
 }
 
 .chip-primary {
-    background: #0f4c5c;
+    background: #c1121f;
 }
 
 .chip-accent {
-    background: #2b7fff;
+    background: #1d4ed8;
 }
 
 .chip-support {
@@ -174,7 +174,7 @@ a {
 
 a:hover,
 a:focus-visible {
-    color: #09333f;
+    color: #8b0d17;
 }
 
 footer {
