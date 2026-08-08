@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact PAVI Projects for consultations, support, and installation quotes.">
+    <meta name="author" content="Victor Mtisi">
+    <meta property="og:title" content="PAVI Projects | Contact">
+    <meta property="og:description"
+        content="Submit a service inquiry form to request pricing and scheduling information.">
+    <meta property="og:image" content="images/logo.svg">
+    <meta property="og:url" content="https://baphilani.github.io/wdd231/finalproject/contact.html">
+    <title>PAVI Projects | Contact</title>
+    <link rel="icon" href="images/favicon-pv.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/contact.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="PAVI Projects logo" width="44" height="44" loading="lazy">
+            <span>PAVI Projects</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">Menu</button>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="contact-title">
+            <h1 id="contact-title">Request a Service Quote</h1>
+            <form id="contactForm" class="form-grid" method="get" action="thanks.html">
+                <div>
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" name="fullName" type="text" required autocomplete="name"
+                        title="Enter your full name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required autocomplete="email"
+                        placeholder="name@example.com">
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" pattern="[0-9+\-\s]{8,}" required autocomplete="tel"
+                        placeholder="+263 77 000 0000">
+                </div>
+
+                <div>
+                    <label for="serviceType">Service Type</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="">Select a service</option>
+                        <option value="Solar Installation">Solar Installation</option>
+                        <option value="Energy Audit">Energy Audit</option>
+                        <option value="Security Systems">Security Systems</option>
+                        <option value="Maintenance">Maintenance</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Send Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Victor Mtisi</p>
+        <p>Last modification: <span id="lastModifiedDate"></span></p>
+        <p>&copy; <span id="copyrightYear"></span> PAVI Projects. All rights reserved.</p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+
+</html>

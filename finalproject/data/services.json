@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Residential Solar Design",
+        "category": "Solar",
+        "priceUsd": 850,
+        "summary": "Site survey and custom PV layout for homes.",
+        "duration": "2 days",
+        "availability": "Available"
+    },
+    {
+        "id": 2,
+        "name": "Commercial Solar Installation",
+        "category": "Solar",
+        "priceUsd": 2200,
+        "summary": "End-to-end commercial rooftop solar implementation.",
+        "duration": "5 days",
+        "availability": "Available"
+    },
+    {
+        "id": 3,
+        "name": "Battery Backup Integration",
+        "category": "Energy Storage",
+        "priceUsd": 1400,
+        "summary": "Hybrid inverter and battery bank integration.",
+        "duration": "3 days",
+        "availability": "Limited"
+    },
+    {
+        "id": 4,
+        "name": "Energy Audit",
+        "category": "Consulting",
+        "priceUsd": 300,
+        "summary": "Load profiling and usage optimization report.",
+        "duration": "1 day",
+        "availability": "Available"
+    },
+    {
+        "id": 5,
+        "name": "Inverter Diagnostics",
+        "category": "Maintenance",
+        "priceUsd": 180,
+        "summary": "Fault tracing and performance tuning.",
+        "duration": "4 hours",
+        "availability": "Available"
+    },
+    {
+        "id": 6,
+        "name": "Panel Cleaning Service",
+        "category": "Maintenance",
+        "priceUsd": 120,
+        "summary": "Safe and efficient solar panel cleaning.",
+        "duration": "3 hours",
+        "availability": "Available"
+    },
+    {
+        "id": 7,
+        "name": "CCTV Installation",
+        "category": "Security",
+        "priceUsd": 760,
+        "summary": "HD surveillance setup for home and office.",
+        "duration": "2 days",
+        "availability": "Available"
+    },
+    {
+        "id": 8,
+        "name": "Access Control Setup",
+        "category": "Security",
+        "priceUsd": 680,
+        "summary": "Card and biometric access systems deployment.",
+        "duration": "2 days",
+        "availability": "Limited"
+    },
+    {
+        "id": 9,
+        "name": "Electric Fence Installation",
+        "category": "Security",
+        "priceUsd": 950,
+        "summary": "Perimeter electric fencing with alerts.",
+        "duration": "3 days",
+        "availability": "Available"
+    },
+    {
+        "id": 10,
+        "name": "Backup Generator Wiring",
+        "category": "Electrical",
+        "priceUsd": 540,
+        "summary": "Safe transfer switch and generator integration.",
+        "duration": "1 day",
+        "availability": "Available"
+    },
+    {
+        "id": 11,
+        "name": "Smart Home Controls",
+        "category": "Automation",
+        "priceUsd": 610,
+        "summary": "Lighting and appliance control automation.",
+        "duration": "2 days",
+        "availability": "Limited"
+    },
+    {
+        "id": 12,
+        "name": "Network Cabling",
+        "category": "Infrastructure",
+        "priceUsd": 430,
+        "summary": "Structured LAN and device cabling.",
+        "duration": "1 day",
+        "availability": "Available"
+    },
+    {
+        "id": 13,
+        "name": "Wi-Fi Coverage Optimization",
+        "category": "Infrastructure",
+        "priceUsd": 260,
+        "summary": "Signal mapping and access point tuning.",
+        "duration": "6 hours",
+        "availability": "Available"
+    },
+    {
+        "id": 14,
+        "name": "Preventive Maintenance Plan",
+        "category": "Maintenance",
+        "priceUsd": 390,
+        "summary": "Quarterly inspection and service package.",
+        "duration": "Recurring",
+        "availability": "Available"
+    },
+    {
+        "id": 15,
+        "name": "Emergency Call-Out Support",
+        "category": "Support",
+        "priceUsd": 150,
+        "summary": "Priority troubleshooting response within Ruwa.",
+        "duration": "As needed",
+        "availability": "24/7"
+    }
+]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="paviTitle paviDesc">
+  <title id="paviTitle">PAVI Projects Logo</title>
+  <desc id="paviDesc">Technology project logo with a stylized circuit pattern.</desc>
+  <rect width="120" height="120" rx="24" ry="24" fill="#ffffff" />
+  <circle cx="60" cy="40" r="20" fill="#c81d25" />
+  <path d="M60 60 v24" stroke="#0f5461" stroke-width="8" stroke-linecap="round" />
+  <path d="M50 74 h20" stroke="#0f5461" stroke-width="8" stroke-linecap="round" />
+  <path d="M46 90 h28" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round" />
+</svg>
