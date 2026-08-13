@@ -8,6 +8,13 @@ if (navToggle && siteNav) {
         const isOpen = siteNav.classList.toggle("open");
         navToggle.setAttribute("aria-expanded", String(isOpen));
     });
+
+    siteNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            siteNav.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+        });
+    });
 }
 
 if (yearEl) {
@@ -29,3 +36,6 @@ export function setWayfinding(pathname) {
         }
     });
 }
+
+const currentPath = window.location.pathname.split("/").pop() || "index.html";
+setWayfinding(currentPath);

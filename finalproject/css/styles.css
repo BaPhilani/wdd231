@@ -35,6 +35,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem 0;
 }
@@ -54,12 +55,38 @@ footer {
 }
 
 .nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    width: 2.6rem;
+    height: 2.3rem;
     border: 0;
     background: var(--brand-red);
     color: #fff;
     border-radius: 0.4rem;
-    padding: 0.5rem 0.7rem;
-    font-weight: 700;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 1.2rem;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .site-nav {
@@ -218,6 +245,10 @@ footer a {
         flex-direction: row;
         width: auto;
         gap: 1rem;
+    }
+
+    .site-nav a {
+        padding: 0;
     }
 
     .hero-grid {
